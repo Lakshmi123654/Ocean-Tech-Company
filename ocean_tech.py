@@ -128,49 +128,6 @@ if choice == 1 :
 
         exit (0)
 
-    x = open ("C:\\Users\\Admin\\OCEAN_QUESTIONER.txt", "r")
+    print ("\n\033[1;34m1. You MUST HAVE A GIT HUB ACCOUNT and an Ocean Tech Account for writing questions")
 
-    with open ("C:\\Users\\Admin\\OCEAN_QUESTIONER.txt", "r") as file :
-
-        f = str (file.read ())
-
-        if len (f) == 0 :
-
-            os.system ("cls")
-            print ("\n\033[1;31mPlease enter your question in C:\\Users\\Admin\\OCEAN_QUESTIONER.txt")
-
-        else :
-
-            codes = f.split ("\n")
-
-            for code in codes :
-
-                if (".name" in code) and ("is" in code) and (("\"" in code) or ("'" in code)) :
-
-                    global name
-                    name = str (code).replace (".name", "").replace ("is", "").replace ("\"", "").replace ("'", "").lstrip ().rstrip ()
-                    print ("\033[1;34m")
-
-                if (".language" in code) and ("is" in code) and (("\"" in code) or ("'" in code)) :
-
-                    global language
-                    language = str (code).replace (".language", "").replace ("is", "").replace ("\"", "").replace ("'", "").lstrip ().rstrip ()
-                    print ("\033[1;34m")
-
-                if (".title" in code) and ("is" in code) and (("\"" in code) or ("'" in code)) :
-
-                    global title
-                    title = str (code).replace (".title", "").replace ("is", "").replace ("\"", "").replace ("'", "").lstrip ().rstrip ()
-                    print ("\033[1;34m")
-
-                if (".question" in code) and ("is" in code) and (("\"" in code) or ("'" in code)) :
-
-                    global question
-                    question = str (code).replace (".question", "").replace ("is", "").replace ("\"", "").replace ("'", "").replace ("\\n", "\n").lstrip ().rstrip ()
-
-            print ("\nUser Name : ", name.title ())
-            print ("\nProgramming Language :", language.title ())
-            print (title.upper ())
-            print ("      "+ question.title ())
-            print ("Thanking You Sicerely !")
-            notification.notify (title = "Ocean Tech Organization Question Platform", message = "Thanking You Sincerely, for using Ocean Tech Question Platform ! We are happy and appreciate you. Your Question will be soon anwered by a kindful helper. You should pleae wait. Best of Luck !!", timeout = 17)
+    notification.notify (title = "Ocean Tech Organization Question Platform", message = "Thanking You Sincerely, for using Ocean Tech Question Platform ! We are happy and appreciate you. Your Question will be soon anwered by a kindful helper. You should pleae wait. Best of Luck !!", timeout = 17)
