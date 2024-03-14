@@ -129,6 +129,6 @@ if choice == 1 :
         exit (0)
 
     print ("\n\033[1;34m1. You MUST HAVE A GIT HUB ACCOUNT and an Ocean Tech Account for writing questions.")
-    print ("\n2. Create a Pull Request on this website : https://www.github.com/Lakshmi123654/Ocean-Tech-Company/main/ocean_tech.py
+    print ("\n2. Create a Pull Request on this website : https://www.github.com/Lakshmi123654/Ocean-Tech-Company")
 
     notification.notify (title = "Ocean Tech Organization Question Platform", message = "Thanking You Sincerely, for using Ocean Tech Question Platform ! We are happy and appreciate you. Your Question will be soon anwered by a kindful helper. You should pleae wait. Best of Luck !!", timeout = 17)
